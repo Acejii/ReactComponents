@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Carousel from "./components/Carousel/Carousel";
+import alert from "./components/ConfirmAlert/alert";
+import "./App.scss";
+import Button from "./components/Button/Button";
+import ObserverTest from "./components/Observer/ObserverTest";
+import HeaderHideAndAppear from "./Functions/HeaderHideAndAppear";
+import ScrollIntoView from "./Functions/ScrollIntoView";
+import LoadingTaskbar from "./components/LoadingTaskbar/LoadingTaskbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LoadingTaskbar />
+      <div className="App" style={{ padding: 40 }}>
+        {/* <Carousel /> */}
+        {/* <Button /> */}
+        {/* <button onClick={() => alert()}>Alert</button> */}
+
+        <ScrollIntoView />
+        <HeaderHideAndAppear />
+        <ObserverTest />
+      </div>
+    </>
   );
 }
 

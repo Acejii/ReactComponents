@@ -1,0 +1,29 @@
+@use "../scss/" as *;
+
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  // border: 1px solid;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-primary {
+  background-color: $main-color;
+  color: $txt-color;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  color: $txt-color;
+}
+
+.form-controll {
+}
